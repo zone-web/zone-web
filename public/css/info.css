@@ -1,0 +1,45 @@
+.container{
+	width:990px;
+	margin:0 auto;
+}
+.container h1{
+	border-bottom:2px solid #88C5E1;
+	padding:15px 0;
+}
+.form-container{
+	padding:8px 36px;
+	box-shadow: 1px 2px 42px #ccc;
+}
+.form-group{
+	padding:8px 0;
+	position:relative;//相对于照片来定位
+}
+.form-group label{
+	display:inline-block;
+	width:100px;
+	font-size:14px;
+}
+.form-group input{
+	width:200px;
+	height:26px;
+}
+.form-group .save{
+	width:80px;
+	height:26px;
+	border:0px;
+	font-weight: bold;
+	background:#88C5E1;
+	color:#fff;
+	border-radius:3px;
+	font-size: 16px;
+}
+.form-group .photo{
+	position:absolute;
+	border:1px solid #ddd;
+	width:100px;
+	height:120px;
+	top:0;
+	left:330px;
+}
+
+

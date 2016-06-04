@@ -1,43 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <title>注册个人信息</title>
-  <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/info.css">
-  <script src="js/info.js"></script>
-</head>
+{{extend ("../common/layout")}}
 
-<body>
+{{#block ("head")}}
+<title>注册个人信息</title>
+<link rel="stylesheet" type="text/css" href="/public/css/info.css">
+{{/block}}
+{{#block("js")}}
+<script src="/public/js/info.js"></script>
+{{/block}}
+
+{{#block ("body")}}
+
+  <!-- 主体部分 -->
+
+<div class="container">
+  <h1>个人信息</h1>
   <form action="">
+  <div class="form-container">
     <div class="form-group">
-      <label>
-        昵称：
+      <label>昵称:</label>
         <input type="text" name="userName" id="userName">
-      </label>
     </div>
     <div class="form-group">
-      <label>
-        上传头像
+      <label>上传头像: </label>
         <input type="file" name="files" class="files">
-      </label>
+        <div class="photo"></div>
     </div>
     <div class="form-group">
-      <label>
-        手机号：
+      <label> 手机号:</label>
         <input type="text" name="phone" class="phone">
-      </label>
     </div>
     <div class="form-group">
-      <label>
-        QQ：
+      <label>QQ:</label>
         <input type="text" name="qq" class="qq">
-      </label>
     </div>
     <div class="form-group">
-      <label>
-        所在城市：
+      <label>所在城市: </label>
         <select name="province" id="province">
           <option value="ZH">浙江省</option>
           <option value="SH">上海市</option>
@@ -59,10 +57,17 @@
           <option value="TJ">天津</option>
           <option value="NJ">南京</option>
         </select>
-      </label>
       <input type="text" name="address" class="address">
     </div>
-  </form>
-</body>
+    <div class="form-group">
+        <label for=""></label>
+        <input type="submit" value="保存" class="save">
+    </div>
+   </form>
+  </div>
+  </div>
+  
 
-</html>
+
+{{/block}}
+
