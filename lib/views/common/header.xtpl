@@ -1,1 +1,22 @@
-header
+<!-- 头部页面 -->
+	<header>
+		<div class="container">
+			<div class="container_left">
+				<a href="#">
+					<img src="/public/images/logo.png">
+				</a>
+			</div>
+			<div class="container_center">
+				<input type="text" value="查找课程..." />
+				<!-- <div class="iconfont">&#xe601;</div> -->
+			</div>
+			<div class="container_right">
+				<ul id="under">
+					<li><a class="active" href="#">首页</a></li>
+					<li><a href="#">课程</a></li>
+					<li><a href="#">公告</a></li>
+					<li><a href="#">登录</a></li>
+				</ul>
+			</div>			
+		</div>
+	</header>

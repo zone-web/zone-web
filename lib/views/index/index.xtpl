@@ -1,10 +1,24 @@
 {{extend ("../common/layout")}}
+
 {{#block ("head")}}
 <title>首页</title>
-<style>
-</style>
+<link rel="stylesheet" type="text/css" href="/public/css/index.css">
 {{/block}}
+
+
+
 {{#block ("body")}}
+
+	<!-- 主体部分 -->
+	<section>
+		<div class="wrapper">
+			<ul class="tabs">
+				<li><a href="#">登录</a></li>
+				<li><a href="#">注册</a></li>
+			</ul>
+		</div>
+	</section>
+	
 
 
 {{/block}}

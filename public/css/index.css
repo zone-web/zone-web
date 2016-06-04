@@ -81,5 +81,5 @@ header .container_right>ul .underline,header .container_right>ul .active{
 /********************************** 主体部分 ***********************************/
 .wrapper{
 	height:416px;
-	background:url('../images/banner.png') no-repeat;
+	background:url('/public/images/banner.png') no-repeat;
 }
