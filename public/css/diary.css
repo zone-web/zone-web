@@ -1,0 +1,63 @@
+.content{
+	width:1200px;
+	margin:auto;
+}
+
+ul.diary-tabs li{
+	display:block;
+	float:left;
+	list-style:none;
+	font-size:22px;
+	color:#ddd;
+	width:25%;
+	margin-top:22px;
+	text-align: center;
+	height:36px;
+	line-height: 36px;
+	border-bottom: 2px solid #ccc;
+}
+ul.diary-tabs li a{
+	text-decoration: none;
+}
+ul.diary-tabs li:hover{
+	border-bottom:2px solid #88C5E1;
+}
+.tab-content{
+	margin-top:8px;
+}
+.item .user-info{
+	width:100px;
+	float:left;
+}
+.item .user-info img{
+	border-radius: 150px;
+}
+.user-info p{
+	padding:10px;
+}
+.user-info p:hover{
+	color:#e4393c;
+
+}
+.diary-content{
+	float:left;
+}
+.diary-content h3 a{
+	text-decoration: none;
+}
+.diary-content h3:hover a{
+	color:#e4393c;
+}
+.diary-content span{
+	padding-left:6px;
+	color:#ccc;
+	font-size:12px;
+}
+.diary-content p{
+	width:800px;
+	margin:22px;
+	font-size:16px;
+	line-height:22px;
+}
+
+
