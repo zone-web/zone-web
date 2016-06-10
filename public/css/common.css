@@ -1,11 +1,13 @@
 @font-face {
   font-family: 'iconfont';
-  src: url('//at.alicdn.com/t/font_1464426491_173555.eot'); /* IE9*/
-  src: url('//at.alicdn.com/t/font_1464426491_173555.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('//at.alicdn.com/t/font_1464426491_173555.woff') format('woff'), /* chrome、firefox */
-  url('//at.alicdn.com/t/font_1464426491_173555.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-  url('//at.alicdn.com/t/font_1464426491_173555.svg#iconfont') format('svg'); /* iOS 4.1- */
+  src: url('//at.alicdn.com/t/font_1465568411_2750556.eot'); /* IE9*/
+  src: url('//at.alicdn.com/t/font_1465568411_2750556.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//at.alicdn.com/t/font_1465568411_2750556.woff') format('woff'), /* chrome、firefox */
+  url('//at.alicdn.com/t/font_1465568411_2750556.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/font_1465568411_2750556.svg#iconfont') format('svg'); /* iOS 4.1- */
 }
+                                       
+                    
 *{
 	margin:0;
 	padding:0;
@@ -61,6 +63,7 @@ header .container_center{
 	height: 40px;
 	padding: 0 5px;
 	float: left;
+	position: relative;
 }
 header .container_center input{
 	width:430px;
@@ -68,6 +71,11 @@ header .container_center input{
 	padding:5px 10px;
 	border:none;
 	border-radius: 2px;
+}
+header .container_center .iconfont{
+	position: absolute;
+	top:15px;
+	right: 20px;
 }
 header .container_right{
 	width: 360px;
@@ -101,3 +109,35 @@ header .container_right>ul .underline,header .container_right>ul .active{
 
 }
 
+/*************************************** 尾部 **************************************/
+footer{
+	background: #333;
+}
+.footer{
+	width: 1170px;
+	margin: auto;
+	/*background: pink;*/
+}
+.footer .menu{
+	list-style: none;
+	padding:10px 0;
+	padding-top: 15px;
+	text-align: center;
+	color:#fff;
+}
+.footer .menu li{
+	display: inline-block;
+	margin: 0 8px;
+}
+.footer .menu>li>a{
+	text-decoration: none;
+	font-size: 16px;
+	color: #fff;
+}
+.footer p{
+	text-align: center;
+	font-size: 14px;
+	color: #ccc;
+	padding: 30px;
+	padding-top: 10px;
+}
