@@ -1,11 +1,13 @@
 
 /********************************** 主体部分 ***********************************/
+.login-bg{
+	height:520px;
+	background:url('/public/images/banner.jpg') no-repeat;
+	background-size: 100%;
+	opacity: 0.5;
+}
 .container{
 	width: 1170px;
-}
-.login-bg{
-	height:416px;
-	background:url('/public/images/banner.png') no-repeat;
 }
 
 .login-container{
