@@ -1,0 +1,74 @@
+{{extend ("../common/layout")}}
+
+{{#block("css")}}
+<link rel="stylesheet" type="text/css" href="/public/css/list.css">
+{{/block}}
+
+{{#block ("body")}}
+	<section>
+		<div class="container">
+			<div class="list">
+				<div class="common-title">课程列表</div>
+				<div class="list-content">
+					{{#each(items)}}
+					<div class="item">
+						<div class="icon">
+							<img src="{{icon}}">
+						</div>
+						<div class="item-content">
+							<h3>{{title}}</h3>
+							<div class="score">{{score}}分</div>
+							<ul class="clearfix">
+								{{#each(tags)}}
+								<li>{{name}}</li>
+								{{/each}}
+							</ul>
+							<p>{{content}}</p>
+						</div>						
+					</div>
+					{{/each}}
+				</div>
+			</div>
+			<div class="tag"></div>
+		</div>
+	</section>
+	{{/block}}
+
+	<script>
+		
+	// $.ajax({
+	// 	url:"/notes/",
+	// 	dataType:"json", //返回类型  json | text
+	// 	type:'get',
+	// 	success:function(data){
+	// 		var items = data.value.items;
+	// 		var str = '';
+	// 		for(var i = 0;i<items.length;i++){
+	// 			str += '<div class="item">'+
+	// 					'<div class="icon">'+
+	// 						'<img src="'+items[i].icon+'">'+
+	// 					'</div>'+
+	// 					'<div class="item-content">'+
+	// 						'<h3>'+items[i].title+'</h3>'+
+	// 						'<div class="score">'+items[i].score+'分</div>'+
+	// 						'<ul class="clearfix">'+
+	// 							'<li>学分</li>'+
+	// 							'<li>学分</li>'+
+	// 							'<li>学分</li>'+
+	// 							'<li>学分</li>'+
+	// 							'<li>学分</li>'+
+	// 							'<li>学分</li>'+
+	// 							'<li>学分</li>'+
+	// 						'</ul>'+
+	// 						'<p>'+items[i].content+'</p>'+
+	// 					'</div>	'+					
+	// 				'</div>';
+	// 		}
+	// 		$('.list-content').html(str);
+	// 	},
+	// 	error:function(){
+
+	// 	}
+	// });
+
+	</script>
