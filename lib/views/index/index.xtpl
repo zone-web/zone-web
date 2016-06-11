@@ -1,4 +1,4 @@
-{{extend ("../common/layout")}}
+ {{extend ("../common/layout")}}
 
 {{#block ("head")}}
 <title>首页</title>
